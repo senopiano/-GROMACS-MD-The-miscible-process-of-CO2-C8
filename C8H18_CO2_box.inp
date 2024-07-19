@@ -1,0 +1,23 @@
+#
+# C8H18 & CO2 MMP
+#
+
+
+tolerance 2.0
+filetype pdb
+output C8H18_CO2.pdb
+
+structure CO2.pdb
+  number 500 
+  inside box 0. 0. -50. 50. 50. 0. 
+end structure
+
+structure C8H18.pdb 
+  number 200
+  inside box 0. 0. 0. 50. 50. 20.
+end structure
+
+structure CO2.pdb
+  number 500 
+  inside box 0. 0. 20. 50. 50. 70. 
+end structure
