@@ -1,0 +1,39 @@
+integrator               = md
+dt                       = 0.001     ; 10 fs
+nsteps                   = 30000000  ; 30 ns
+
+nstenergy                = 500
+nstlog                   = 500
+nstxout                  = 500
+
+;annealing                = single
+;annealing-npoints        = 3
+;annealing-time           = 0 100 200
+;annealing-temp           = 0 330 323.15
+
+constraints              = all-bonds
+
+cutoff-scheme            = Verlet
+
+coulombtype              = PME
+rcoulomb                 = 2.0
+
+continuation             = yes
+vdwtype                  = Cut-off
+rvdw                     = 1.4
+DispCorr                 = EnerPres
+
+tcoupl                   = v-rescale
+tc-grps                  = System
+tau-t                    = 0.1
+ref-t                    = 313.15
+
+pcoupl                   = C-rescale
+pcoupltype               = semiisotropic
+tau_p                    = 3
+compressibility          = 0 4.5e-5
+ref_p                    = 0 60
+
+pbc			= xyz
+; gen-vel		= yes
+; gen-temp		= 313.15

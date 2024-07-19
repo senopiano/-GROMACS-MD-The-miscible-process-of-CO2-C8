@@ -1,0 +1,47 @@
+; Created by AuToFF
+
+[ moleculetype ]
+; name          nrexcl
+GL1Q       3
+
+[ atoms ]
+;  Index    type       residue  resname    atom      cgnr     charge       mass
+     1    CH3_C             1       GL1Q     CH01     1      0   15.035000
+     2    CH2_C             1       GL1Q     CH02     1       0   14.027000
+     3    CH2_C             1       GL1Q     CH03     1      0   14.027000
+     4    CH2_C             1       GL1Q     CH04     1       0   14.027000
+     5    CH2_C             1       GL1Q     CH05     1       0   14.027000
+     6    CH2_C             1       GL1Q     CH06     1      0   14.027000
+     7    CH2_C             1       GL1Q     CH07     1       0   14.027000
+     8    CH3_C             1       GL1Q     CH08     1      0   15.035000
+
+[ bonds ]
+; atom_i  atom_j  functype     r0 (nm)      k (kJ/mol/nm^2)
+       1       2       1       0.1540      2.175703E+05
+       2       3       1       0.1540      2.175703E+05
+       3       4       1       0.1540      2.175703E+05
+       4       5       1       0.1540      2.175703E+05
+       5       6       1       0.1540      2.175703E+05
+       6       7       1       0.1540      2.175703E+05
+       7       8       1       0.1540      2.175703E+05
+
+[ angles ]
+; atom_i  atom_j  atom_k  functype    a0 (Deg.)  k (kJ/mol/rad^2)
+       1       2       3       1        114.00    5.196540E+02
+       2       3       4       1        114.00    5.196540E+02
+       3       4       5       1        114.00    5.196540E+02
+       4       5       6       1        114.00    5.196540E+02
+       5       6       7       1        114.00    5.196540E+02
+       6       7       8       1        114.00    5.196540E+02
+
+[ dihedrals ]
+; PROPER DIHEDRAL ANGLES
+; atom_i  atom_j  atom_k  atom_l  functype     c0          c1          c2          c3          c4          c5
+       4       3       2       1       5      6.5771     -0.5668     2.9508      0.0000
+       5       4       3       2       5      6.5771     -0.5668     2.9508      0.0000
+       6       5       4       3       5      6.5771     -0.5668     2.9508      0.0000
+       7       6       5       4       5      6.5771     -0.5668     2.9508      0.0000
+       8       7       6       5       5      6.5771     -0.5668     2.9508      0.0000
+
+; sigma_14 and epsilon_14 et.al here are calculated according to the mixing rules defined by force fields.
+; These parameters are commented out by default because the 'gen-pairs' is set to yes in the 
