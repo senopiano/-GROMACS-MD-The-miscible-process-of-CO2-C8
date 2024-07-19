@@ -1,0 +1,20 @@
+; Created by AuToFF
+
+[ moleculetype ]
+; name          nrexcl
+CO2       3
+
+[ atoms ]
+;  Index    type       residue  resname    atom      cgnr     charge       mass
+     1    opls_272        1       CO2      O01       1     -0.376   15.999400
+     2    opls_261        1       CO2      C02       1      0.752   12.011000
+     3    opls_272        1       CO2      O03       1     -0.376   15.999400
+
+[ bonds ]
+; atom_i  atom_j  functype     r0 (nm)   k (kJ/mol/nm^2)
+       1       2       1       0.1169    2.000000E+06 ; no parameters found, use a large force constant to constraint the distance
+       2       3       1       0.1169    2.000000E+06 ; no parameters found, use a large force constant to constraint the distance
+
+[ angles ]
+; atom_i  atom_j  atom_k  functype    a0 (Deg.)  k (kJ/mol/rad^2)
+       1       2       3       1        180.00    2.000000E+03 ; no parameters found, use a large force constant to constraint the angle
