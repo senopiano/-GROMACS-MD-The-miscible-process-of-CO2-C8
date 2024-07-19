@@ -1,0 +1,15 @@
+; Include forcefield parameters
+#include "/home/duckter/Documents/gromacs_demo/demo/trappeua.ff/forcefield.itp"
+#include "C8H18.itp"
+#include "CO2.itp"
+
+[ system ]
+; Name
+C8H18&CO2 MMP Process
+
+[ molecules ]
+; Compound        #mols
+CO2        500
+GL1Q       200
+CO2        500
+
